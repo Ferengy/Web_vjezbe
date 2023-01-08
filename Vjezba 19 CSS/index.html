@@ -1,121 +1,180 @@
+
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <style>
-        header {
-            background-position: fixed;
-            background-repeat: no-repeat;
-            height: 250px;
-            background-size: cover;
-            background-image: url("../images/51792-HEADER-1-M.webp");
-        }
-
-        header h1 {
-            text-align: center;
-            padding: 20% 0 0 0;
-            color: #e7e7e7;
-        }
-
-
-        nav a {
-            color: white;
-            background: black;
-            font-weight: bold;
-            display: block;
-            padding: 15px;
-            font-size: 15px;
-            text-decoration: none;
-            text-align: center;
-        }
-
-        nav a:hover {
-            background: darkgray;
-        }
-
-        main {
-            padding: 20px 10px;
-        }
-
-        h1 {
-            font-size: 22px;
-            margin: 10px 0;
-        }
-
-        p {
-            line-height: 24px;
-        }
-
-        footer {
-            background-color: black;
-            padding: 10px 0;
-            margin-top: 10px;
-            text-align: center;
-            color: white
-        }
-
-
-        @media only screen and (min-width: 700px) {
-            header {
-                background-image: url("../images/51792-HEADER-1-T.webp");
-                height: 330px;
-            }
-        }
-
-        @media only screen and (min-width: 990px) {
-            header {
-                background-image: url("../images/51792-HEADER-1-D.webp");
-                height: 100vh;
-            }
-
-            header h1 {
-                font-size: 30px;
-            }
-        }
-
-        @media (min-width: 480px) {
-            nav ul {
-                display: flex;
-            }
-
-            nav li {
-                flex: 1 1 auto;
-            }
-
-            h1 {
-                font-size: 32px;
-            }
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+<style>
+    * { 
+        margin: 0; 
+        padding: 0; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif
 
+    } 
+    header {
+        background-position: fixed;
+        background-repeat: no-repeat;
+        height: 250px;
+        background-size:cover;
+        background-image: url("images/51792-HEADER-1-M.webp");
+    }
+    header h1 {
+        text-align: center;
+        padding: 20% 0 0 0;
+        color:#e7e7e7;
+
+    }
+    
+    @media only screen and  (min-width: 700px) { 
+        header {
+            background-image: url("images/51792-HEADER-1-T.webp");
+            height: 330px;
+        }
+    }
+    @media only screen and  (min-width: 990px) { 
+        header {
+            background-image: url("images/51792-HEADER-1-D.webp");
+            height: 100vh;
+        }
+        header h1 {
+            font-size: 30px;
+        }
+    }
+   
+    main {
+        padding: 20px 10px;
+    }
+    h1 {
+        font-size: 22px;
+        margin: 10px 0;
+    }
+    h2 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+    span {
+        color: #407a21;
+        font-weight: bold;
+    }
+    nav ul {
+         list-style: none; 
+    }
+    @media (min-width: 480px) { 
+        nav ul {
+             display: flex; 
+        } 
+        nav li {
+             flex: 1 1 auto; 
+        }
+        h1 {
+            font-size: 32px;
+        }
+    }
+
+    nav a { 
+        color: white; 
+        background: black; 
+        font-weight: bold; 
+        display: block; 
+        padding: 15px; 
+        font-size: 15px; 
+        text-decoration: none; 
+        text-align: center; 
+    } 
+    nav a:hover { 
+        background: darkgray; 
+    } 
+    @media only screen and (min-width: 768px) {
+         nav a { 
+            font-size: 20px; 
+        }
+    }
+    section { display: flex; flex-wrap: wrap; } 
+    
+    div {
+        flex-basis: 95%;
+        margin: 10px;
+        padding: 10px 5px;
+        border: 1px solid darkgray;
+        box-shadow: 0 2px 3px 1px #ddd;
+        
+    }
+    @media only screen and (min-width: 480px) {
+        div { 
+            flex-basis: 43%;
+        }
+    }
+    @media only screen and (min-width: 768px) {
+        div { 
+            flex-basis: 28%;
+        }
+    }
+    @media only screen and (min-width: 1200px) {
+        div { 
+            flex-basis: 20%;
+        }
+    }
+    
+    div img {
+        width: 100%;
+    }
+    .price {
+        margin: 30px 0 10px 0;
+    }
+    footer {
+        background-color: black;
+        padding: 10px 0;
+        margin-top: 10px;
+        text-align: center;
+        color: white
+    }
+</style>
 <body>
     <header>
         <h1>MARQ &reg; TOOL WATCH COLLECTION</h1>
     </header>
-
-
     <nav>
-        <a href="">Homepage</a>
-        <a href="">Articles</a>
-        <a href="">Contact</a>
-
+        <ul>
+            <li><a href="">Homepage</a></li>
+            <li><a href="">Articles</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
     </nav>
     <main>
-        <h1>LUXURY SMARTWATCHES</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minima odio iusto quam, officia sunt vero
-            nihil doloremque, adipisci tempora mollitia praesentium ullam? Officiis reiciendis est quo provident numquam
-            doloribus!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo est itaque optio
-            exercitationem enim. Soluta, at minima laboriosam alias voluptatum fugit veniam odio eius possimus enim
-            molestiae, dolores cum expedita!</p>
-
+        <h2>LUXURY SMARTWATCHES</h2>
+        <section>
+            <div>
+                <figure id="adventurer">
+                    <img src="watches/cf-lg (1).webp" alt="MARQ&reg; Adventurer" title="MARQ&reg; Adventurer">
+                </figure>
+                <h2>MARQ&reg; Adventurer</h2>
+                <p>Potrebna vam je pouzdana pomoć za avanture. Za vaše vam je ekspedicije potreban luksuzan i moderan funkcionalni sat napravljen od titanija 5. klase s AMOLED zaslonom, TOPO kartama i još mnogo toga.</p>
+                <p class="price"><span>Cijena:</span> 2.250,00 &euro;</p>
+            </div>
+            <div>
+                <figure id="athlete">
+                    <img src="watches/cf-lg (2).webp" alt="MARQ&reg; Athlete" title="MARQ&reg; Athlete">
+                </figure>
+                <h2>MARQ&reg; Athlete</h2>
+                <p>Uvijek pomičete svoje granice. Zaslužujete luksuzan i moderan funkcionalni sat napravljen od titanija 5. klase s AMOLED zaslonom i revolucionarnim funkcijama za treniranje i oporavak.</p>
+                <p class="price"><span>Cijena:</span> 1.950,00 &euro;</p>
+            </div>
+            <div>
+                <figure id="aviator">
+                    <img src="watches/cf-lg (4).webp" alt="MARQ&reg; Aviator" title="MARQ&reg; Aviator">
+                </figure>
+                <h2>MARQ&reg; Aviator</h2>
+                <p>Želite biti spremni poletjeti u trenutku. Potreban vam je luksuzan i moderan funkcionalni sat napravljen od titanija 5. klase s AMOLED zaslonom i namjenskim funkcijama za letenje.</p>
+                <p class="price"><span>Cijena:</span> 2.550,00 &euro;</p>
+            </div>
+        </section>
     </main>
-    <footer> &copy; Doamgoj Glad </footer>
+    <footer>
+        &copy; Domagoj Glad
+    </footer>
 </body>
-
 </html>
